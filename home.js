@@ -1,15 +1,15 @@
 const charas = [
     {
         img: "images/sLala.jpg",
-        text: "デビルーク星の第一王女 明るくて天真爛漫"
+        text: "ララ・サタリン・デビルーク"
     },
     {
         img: "images/sNana.jpg",
-        text: "デビルーク星の第二王女 動物と話せる元気なツンデレ娘"
+        text: "ナナ・アスタ・デビルーク"
     },
     {
         img: "images/sMomo.jpg",
-        text: "デビルーク星の第三王女 恋愛に積極的で甘え上手"
+        text: "モモ・べリア・デビルーク"
     },
 ];
 
