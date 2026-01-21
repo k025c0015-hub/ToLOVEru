@@ -168,3 +168,42 @@ main{
   bottom: 5px;
   font-size: 12px;
 }
+
+
+/* ===== スマホ表示用（幅600px以下） ===== */
+@media (max-width: 600px) {
+
+  main {
+    flex-direction: column; /* 縦並びにする */
+    align-items: center;
+  }
+
+  .content {
+    width: 95%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .local {
+    width: 95%;
+  }
+
+  .chara-box {
+    flex-direction: column;
+  }
+
+  .chara-btn {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+
+  #chara-img {
+    width: 80%;
+  }
+
+  .nav-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}
