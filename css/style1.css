@@ -43,13 +43,7 @@ body{
   background-color: #ffd6e7;
 }
 
-.headeer{
-  height: 70px;
-  text-align: center;
-  background-color: #eee;
-}
-
-.gloval {
+.global {
   text-align: center;
   background-color: #ff99dd;
   color: #fff;
@@ -57,7 +51,7 @@ body{
   margin-bottom: 10px;
 }
 
-.gloval img {
+.global img {
   width: 100%;
   height: auto;
   display: block;
@@ -81,22 +75,46 @@ main{
 
 .chara-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  transition: opacity 0.5s;
+  justify-content: center;
+  gap: 20px;
 }
 
-.chara-img {
-  width: 60%;
-  max-width: 300px;
+.chara-btn {
+  background: #ff66cc;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+.chara-btn:hover {
+  transform: scale(1.1);
+  background: #ff88dd;
+}
+
+#chara-img {
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
+  transition: opacity 0.3s ease;
+  transition: transform 0.3s;
 }
 
-.chara-text {
+#chara-img:hover {
+  transform: scale(1.05);
+}
+
+#chara-text {
   font-size: 16px;
   line-height: 1.6;
   padding: 0 10px;
+  transition: opacity 0.3s ease;
 }
 
 .local{
@@ -141,13 +159,6 @@ main{
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.side-links img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
 }
 
 .footer{
@@ -225,9 +236,4 @@ main{
     width: 95%;
     margin-right: 0;
   }
-}
-
-
-@media (max-width: 600px) {
-  
 }
