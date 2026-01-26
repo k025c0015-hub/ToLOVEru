@@ -5,25 +5,25 @@
         <meta charset="utf-8"/>
         <title>ToLOVEる</title>
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
-    <!--ファビコン-->
+
         <link rel = "icon" type = "image/png" href = "images/nana.gif">
-    <!--リセットCSS-->
+
         <link rel = "stylesheet" href = "https://unpkg.com/ress/dist/ress.min.css">
-    <!--Googleフォント-->
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
-    <!--Googleフォント-->
+
         <link rel="stylesheet" href="./css/style1.css">
     </head>
 
     <body>
-        <header class="site-header">
+        <header class="header">
             <div class="logo">
                 <img src="images/nana.gif" alt="サイトアイコン">
             </div>
 
-            <nav class="nav-menu">
+            <nav class="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Introduction.html">作品紹介</a></li>
@@ -41,11 +41,10 @@
             <div class="content">
                 <h2>おすすめキャラ紹介</h2>
                 <div class="chara-box">
-                    <button class="chara-btn" id="prev">←</button>
 
-                    <div class="chara-display">
-                        <img id="chara-img" src="images/sLala.jpg" alt="ララ">
-                        <p id="chara-text">ララ</p>
+                    <div>
+                        <img id="chara-img" class="slide" src="images/sLala.jpg" alt="キャラ画像">
+                        <p id="chara-text" class="slide">ララ</p>
                     </div>
                     <button class="chara-btn" id="next">→</button>
                 </div>
@@ -140,7 +139,7 @@
 
 
         <footer class="footer">
-            <a href="https://jumpsq.shueisha.co.jp/rensai/toloveru_d/" class="banner">
+            <a href="https://jumpsq.shueisha.co.jp/rensai/toloveru_d/">
             <img src="images/SQ.png" alt="バナー画像">
             </a>
 

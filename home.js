@@ -21,16 +21,17 @@ const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
 function updateChara() {
-    img.style.opacity = 0;
-    text.style.opacity = 0;
+    img.classList.remove("slide");
+    text.classList.remove("slide");
 
-    setTimeout(() => {
-        img.src = charas[index].img;
-        text.textContent = charas[index].text;
+    void img.offsetWidth; 
+    void text.offsetWidth;
 
-        img.style.opacity = 1;
-        text.style.opacity = 1;
-    }, 300);
+    img.src = charas[index].img;
+    text.textContent = charas[index].text;
+
+    img.classList.add("slide");
+    text.classList.add("slide");
 }
 
 function nextChara() {
